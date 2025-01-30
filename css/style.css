@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background: radial-gradient(circle, #fff, #ccc);
+    background: radial-gradient(circle, #f0f8ff, #87ceeb); /* Light blue background */
 }
 
 h1 {
@@ -17,36 +17,34 @@ h1 {
     font-family: 'Play', sans-serif;
     position: relative;
     top: 40px;
-    color: #109fe0;
+    color: #4b0082; /* Indigo color */
 }
 
 #container {
     height: 440px;
     width: 560px;
-    background-color: #9DD2EA;
+    background-color: #8a2be2; /* BlueViolet background */
     margin: 0 auto;
     top: 80px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 0px 0px #009de4;
-    /*  box-shadow: [horizontal offset] [vertical offset] 
-    [blur radius] [spread radius] [color]; */
+    box-shadow: 0px 4px 0px 0px #5d3fd3; /* Darker blue shadow */
     position: relative;
 }
 
 #score {
-    background-color: #F1FF92;
-    color: #888E5F;
+    background-color: #ffffe0; /* Light yellow */
+    color: #556b2f; /* Dark olive green */
     padding: 11px;
     position: absolute;
     right: 11px;
-    box-shadow: 0px 4px #9da853;
+    box-shadow: 0px 4px #6b8e23; /* Olive Drab shadow */
 }
 
 #correct {
     position: absolute;
     left: 45%;
-    background-color: #42e252;
+    background-color: #32cd32; /* Lime green */
     color: white;
     padding: 11px;
     display: none;
@@ -55,7 +53,7 @@ h1 {
 #wrong {
     position: absolute;
     left: 42%;
-    background-color: #de401a;
+    background-color: #ff6347; /* Tomato red */
     color: white;
     padding: 11px;
     display: none;
@@ -65,23 +63,22 @@ h1 {
     width: 450px;
     height: 150px;
     margin: 50px auto 10px auto;
-    background-color: #9da0ea;
-    box-shadow: 0px 4px #535aa8;
+    background-color: #6495ed; /* Cornflower blue */
+    box-shadow: 0px 4px #4169e1; /* Royal blue shadow */
     text-align: center;
-    /* for horizontal center */
     font-size: 100px;
     font-family: 'Play', sans-serif;
-    color: black;
+    color: #000080; /* Navy blue */
 }
 
 #instruction {
     width: 450px;
     height: 50px;
-    background-color: #b481d9;
+    background-color: #dda0dd; /* Plum */
     margin: 10px auto;
     text-align: center;
     line-height: 50px;
-    box-shadow: 0px 4px #8153a8;
+    box-shadow: 0px 4px #ba55d3; /* Medium orchid */
 }
 
 #choices {
@@ -95,7 +92,7 @@ h1 {
 .box {
     width: 85px;
     height: 85px;
-    background-color: white;
+    background-color: #fafad2; /* Light goldenrod yellow */
     flex-direction: column;
     border-radius: 3px;
     cursor: pointer;
@@ -108,21 +105,21 @@ h1 {
 
 .box:hover,
 #startreset:hover {
-    background-color: #9c89F6;
+    background-color: #9370db; /* Medium purple */
     color: white;
-    box-shadow: 0px 4px #6b54d3;
+    box-shadow: 0px 4px #663399; /* Rebecca purple */
 }
 
 .box:active,
 #startreset:active {
-    box-shadow: 0px 0px #6b54d3;
+    box-shadow: 0px 0px #663399; /* Rebecca purple */
     top: 4px;
 }
 
 #startreset {
     width: 100px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 250, 205, 0.5); /* Lemon chiffon */
     margin: 0px auto;
     border-radius: 3px;
     cursor: pointer;
@@ -138,7 +135,7 @@ h1 {
     position: absolute;
     top: 385px;
     left: 370px;
-    background-color: rgba(16, 204, 179, 0.7);
+    background-color: rgba(72, 209, 204, 0.7); /* Medium turquoise */
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     display: none;
@@ -147,7 +144,7 @@ h1 {
 #gameOver {
     width: 500px;
     height: 200px;
-    background: linear-gradient(#F3CA6B, #F3706C);
+    background: linear-gradient(#ffdead, #ff4500); /* Navajo white to orange red */
     color: white;
     font-size: 2.5rem;
     text-align: center;
@@ -195,7 +192,7 @@ h1 {
     #gameOver {
         width: 400px;
         height: 250px;
-        background: linear-gradient(#F3CA6B, #F3706C);
+        background: linear-gradient(#ffdead, #ff4500);
         color: white;
         font-size: 2rem;
         text-align: center;
