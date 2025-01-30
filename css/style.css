@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, #f0f8ff, #87ceeb); /* Light blue background */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    position: relative;
+    top: 40px;
+    color: #4b0082; /* Indigo color */
+}
+
+#container {
+    height: 440px;
+    width: 560px;
+    background-color: #8a2be2; /* BlueViolet background */
+    margin: 0 auto;
+    top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #5d3fd3; /* Darker blue shadow */
+    position: relative;
+}
+
+#score {
+    background-color: #ffffe0; /* Light yellow */
+    color: #556b2f; /* Dark olive green */
+    padding: 11px;
+    position: absolute;
+    right: 11px;
+    box-shadow: 0px 4px #6b8e23; /* Olive Drab shadow */
+}
+
+#correct {
+    position: absolute;
+    left: 45%;
+    background-color: #32cd32; /* Lime green */
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 42%;
+    background-color: #ff6347; /* Tomato red */
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #6495ed; /* Cornflower blue */
+    box-shadow: 0px 4px #4169e1; /* Royal blue shadow */
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Play', sans-serif;
+    color: #000080; /* Navy blue */
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    background-color: #dda0dd; /* Plum */
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px #ba55d3; /* Medium orchid */
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: #fafad2; /* Light goldenrod yellow */
+    flex-direction: column;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover,
+#startreset:hover {
+    background-color: #9370db; /* Medium purple */
+    color: white;
+    box-shadow: 0px 4px #663399; /* Rebecca purple */
+}
+
+.box:active,
+#startreset:active {
+    box-shadow: 0px 0px #663399; /* Rebecca purple */
+    top: 4px;
+}
+
+#startreset {
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(255, 250, 205, 0.5); /* Lemon chiffon */
+    margin: 0px auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#timeremaining {
+    width: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 385px;
+    left: 370px;
+    background-color: rgba(72, 209, 204, 0.7); /* Medium turquoise */
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gameOver {
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(#ffdead, #ff4500); /* Navajo white to orange red */
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    padding: 50px;
+    z-index: 2;
+    display: none;
+}
+
+@media (max-width: 570px) {
+    #container {
+        width: 440px;
+        top: 60px;
+    }
+
+    #correct {
+        left: 40%;
+    }
+
+    #wrong {
+        left: 38%;
+    }
+
+    #question,
+    #instruction,
+    #choices {
+        width: 420px;
+    }
+
+    #startreset {
+        width: 205px;
+        margin-left: 0;
+    }
+
+    #timeremaining {
+        width: 205px;
+        left: 225px;
+        text-align: center;
+        display: block;
+    }
+
+    #gameOver {
+        width: 400px;
+        height: 250px;
+        background: linear-gradient(#ffdead, #ff4500);
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        padding-top: 90px;
+        z-index: 2;
+        display: none;
+    }
+}
